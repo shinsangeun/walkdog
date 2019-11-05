@@ -121,3 +121,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/walkdog/'
+
+MAP_WIDGETS = {
+    "GooglePointFieldWidget": (
+        ("zoom", 15),
+        ("mapCenterLocationName", "seoul"),
+        ("GooglePlaceAutocompleteOptions", {'componentRestrictions': {'country': 'kr'}}),
+        ("markerFitZoom", 12),
+    ),
+    "GOOGLE_MAP_API_KEY": "AIzaSyBiBfoToJrqSin7VDqnvJIFBnqGsNWGNr0"
+}
